@@ -19,6 +19,7 @@ body {
 
 main {
   display: flex;
+  border-radius: 0.5em;
 }
 
 #sedans {
@@ -135,7 +136,7 @@ a.button:hover {
 @media (min-width: 600px) {
   main {
     flex-direction: row;
-    margin: 8em 10em;
+    margin: 10em 12em;
   }
 
   .card {

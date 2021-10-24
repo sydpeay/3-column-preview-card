@@ -1,0 +1,171 @@
+/* colors */
+
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$darkCyan: hsl(179, 100%, 13%);
+$whiteTrans: hsla(0, 0%, 100%, 0.75);
+$gray: hsl(0, 0%, 95%);
+
+/* fonts */
+$mainFont: "Lexend Deca";
+$accentFont: "Big Shoulders Display";
+
+/* structure */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: $mainFont;
+	font-weight: 400;
+}
+
+body {
+	min-height: 100vh;
+	background-color: $gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+}
+
+#sedans {
+	background-color: $orange;
+}
+
+#SUVs {
+	background-color: $cyan;
+}
+
+#luxury {
+	background-color: $darkCyan;
+}
+
+/* text */
+
+h1 {
+	color: $gray;
+	font-family: $accentFont;
+	font-size: 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.description {
+	color: $whiteTrans;
+	line-height: 2;
+}
+
+a.button {
+	display: inline-block;
+	background-color: $gray;
+	text-decoration: none;
+	text-align: center;
+	padding: 1em 2.5em;
+	border-radius: 2.5em;
+}
+
+a.button:hover {
+	background-color: inherit;
+	border: 0.13em solid $gray;
+}
+
+#sedans a.button {
+	color: $orange;
+}
+
+#SUVs a.button {
+	color: $cyan;
+}
+
+#luxury a.button {
+	color: $darkCyan;
+}
+
+#sedans a.button:hover {
+	color: $gray;
+}
+
+#SUVs a.button:hover {
+	color: $gray;
+}
+
+#luxury a.button:hover {
+	color: $gray;
+}
+
+.attribution {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	font-size: 1em;
+}
+
+/* mobile only styles */
+
+@media (max-width: 375px) {
+	
+	main {
+		flex-direction: column;
+		margin: 2em;
+	}
+	
+	.card {
+		padding: 2em;
+	}
+	
+	.icon {
+		margin: 1em;
+	}
+	
+	h1 {
+		margin: 1rem;
+	}
+	
+	.description {
+		margin: 1em;
+	}
+	
+	.button {
+		margin: 1em;
+	}
+	
+}
+
+/* desktop only styles */
+
+@media (min-width: 375px) {
+	
+	main {
+		flex-direction: row;
+		margin: 2em;
+	}
+	
+	.card {
+		padding: 2em;
+	}
+	
+	.icon {
+		margin: 1em;
+	}
+	
+	h1 {
+		margin: 1rem;
+	}
+	
+	.description {
+		margin: 1em 1em 2em 1em;
+	}
+	
+	.button {
+		margin: 1em;
+	}
+	
+}

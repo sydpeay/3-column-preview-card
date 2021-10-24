@@ -1,0 +1,151 @@
+/* structure */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+
+#SUVs {
+  background-color: #006970;
+}
+
+#luxury {
+  background-color: #004241;
+}
+
+/* text */
+h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display";
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 2.5em;
+  border-radius: 2.5em;
+}
+
+a.button:hover {
+  background-color: inherit;
+  border: 0.13em solid #f2f2f2;
+}
+
+#sedans a.button {
+  color: #e38826;
+}
+
+#SUVs a.button {
+  color: #006970;
+}
+
+#luxury a.button {
+  color: #004241;
+}
+
+#sedans a.button:hover {
+  color: #f2f2f2;
+}
+
+#SUVs a.button:hover {
+  color: #f2f2f2;
+}
+
+#luxury a.button:hover {
+  color: #f2f2f2;
+}
+
+.attribution {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  font-size: 1em;
+}
+
+/* mobile only styles */
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+    margin: 2em;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .icon {
+    margin: 1em;
+  }
+
+  h1 {
+    margin: 1rem;
+  }
+
+  .description {
+    margin: 1em;
+  }
+
+  .button {
+    margin: 1em;
+  }
+}
+/* desktop only styles */
+@media (min-width: 375px) {
+  main {
+    flex-direction: row;
+    margin: 2em;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .icon {
+    margin: 1em;
+  }
+
+  h1 {
+    margin: 1rem;
+  }
+
+  .description {
+    margin: 1em 1em 2em 1em;
+  }
+
+  .button {
+    margin: 1em;
+  }
+}

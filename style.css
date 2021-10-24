@@ -88,15 +88,24 @@ a.button:hover {
 .attribution {
   font-size: 0.75em;
   text-align: center;
+  margin: 1em;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #006970;
   font-size: 1em;
 }
 
+.attribution a:hover {
+  color: #e38826;
+}
+
+.attrbution a:visited {
+  color: #004241;
+}
+
 /* mobile only styles */
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   main {
     flex-direction: column;
     margin: 2em;
@@ -123,10 +132,10 @@ a.button:hover {
   }
 }
 /* desktop only styles */
-@media (min-width: 375px) {
+@media (min-width: 600px) {
   main {
     flex-direction: row;
-    margin: 2em;
+    margin: 8em 10em;
   }
 
   .card {
@@ -142,7 +151,7 @@ a.button:hover {
   }
 
   .description {
-    margin: 1em 1em 2em 1em;
+    margin: 1em 1em 3em 1em;
   }
 
   .button {
